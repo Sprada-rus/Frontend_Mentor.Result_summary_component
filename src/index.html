@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Results summary component</title>
+</head>
+<body>
+
+<main>
+  <div class="card">
+    <div class="card__score">
+      <p class="title">
+        Your Result
+      </p>
+
+      <div class="circle">
+        <p class="circle__current-score">
+          76
+        </p>
+        <p class="circle__max-score">
+          of 100
+        </p>
+      </div>
+
+      <p class="result">
+        Great
+      </p>
+
+      <p class="result-desc">
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+    </div>
+    <div class="card__summary-list">
+      <p class="title">
+        Summary
+      </p>
+
+      <ul class="list">
+        <li class="list__item bg-red">
+          <div class="item__icon">
+            <img src="assets/images/icon-reaction.svg" alt="reaction icon">
+          </div>
+          <div class="item__name">
+            Reaction
+          </div>
+          <div class="item__score">
+            <span class="score">80</span> / 100
+          </div>
+        </li>
+        <li class="list__item bg-yellow">
+          <div class="item__icon">
+            <img src="assets/images/icon-memory.svg" alt="memory icon">
+          </div>
+          <div class="item__name">
+            Memory
+          </div>
+          <div class="item__score">
+            <span class="score">92</span> / 100
+          </div>
+        </li>
+        <li class="list__item bg-green">
+          <div class="item__icon">
+            <img src="assets/images/icon-verbal.svg" alt="verbal icon">
+          </div>
+          <div class="item__name">
+            Verbal
+          </div>
+          <div class="item__score">
+            <span class="score">61</span> / 100
+          </div>
+        </li>
+        <li class="list__item bg-blue">
+          <div class="item__icon">
+            <img src="assets/images/icon-visual.svg" alt="visual icon">
+          </div>
+          <div class="item__name">
+            Visual
+          </div>
+          <div class="item__score">
+            <span class="score">72</span> / 100
+          </div>
+        </li>
+      </ul>
+
+      <button class="btn">
+        Continue
+      </button>
+
+    </div>
+  </div>
+</main>
+  
+<footer>
+  <div class="attribution">
+    <p>
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. <br>
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </div>
+</footer>
+</body>
+</html>
