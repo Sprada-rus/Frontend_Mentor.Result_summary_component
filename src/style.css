@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
 
 :root {
   /*Primary*/
@@ -26,6 +26,7 @@
 
   font-size: 18px;
   font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 500;
 }
 
 *, *::before, *::after {
@@ -77,6 +78,10 @@ p {
   font-weight: 700;
 }
 
+.card {
+  flex: 1;
+}
+
 .card__score {
   background-image: linear-gradient(180deg, var(--back-light-slate-blue) , var(--back-light-royal-blue) );
   padding: 1.2rem 3rem 2.5rem;
@@ -96,7 +101,6 @@ p {
 
 .card__score .circle {
   width: 9rem;
-  max-width: 200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -119,16 +123,17 @@ p {
 .card__score > .result {
   text-align: center;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 500;
   color: var(--white);
   margin-bottom: .5rem;
 }
 
 .card__score > .result-desc {
   color: var(--light-lavender);
+  opacity: .8;
   text-align: center;
   font-size: .9rem;
-  margin: 0;
+  margin-top: .778rem;
 }
 
 .card__summary-list {
@@ -210,11 +215,50 @@ p {
   width: 100%;
   margin-top: .5rem;
   padding: .8rem 0;
-  background-color: var(--dark-gray-blue);
+  background: var(--dark-gray-blue);
+  background-size: 1rem 10rem;
   color: var(--white);
   font-family: inherit;
   font-size: inherit;
   font-weight: 700;
   border: none;
   border-radius: 5rem;
+  transition: background .5s ease-in;
+}
+
+.card__summary-list .btn:active {
+  background: linear-gradient(180deg, var(--back-light-slate-blue), var(--back-light-royal-blue)) 5rem;
+}
+
+@media (min-width: 1440px) {
+  main {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    flex: 0 0 37rem;
+    display: flex;
+    box-shadow: 1rem 2rem 3rem var(--pale-blue), -0.1rem 1rem 10px var(--pale-blue);
+    border-radius: 2rem;
+  }
+
+  .card__score {
+    flex: 0 0 50%;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+
+  .card__score .circle {
+    width: 10rem;
+    height: 10rem;
+  }
+
+  .circle__current-score {
+    font-size: 3.5rem;
+  }
+
+  .card__summary-list {
+    flex: 0 0 50%
+  }
 }
