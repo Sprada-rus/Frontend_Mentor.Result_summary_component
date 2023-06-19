@@ -6,10 +6,10 @@
   --orangey-yellow: hsl(39, 100%, 56%);
   --green-teal: hsl(166, 100%, 37%);
   --cobalt--blue: hsl(234, 85%, 45%);
-  --light-red-10: hsl(0, 100%, 67%, 10%);
-  --orangey-yellow-10: hsl(39, 100%, 56%, 10%);
-  --green-teal-10: hsl(166, 100%, 37%, 10%);
-  --cobalt--blue-10: hsl(234, 85%, 45%, 10%);
+  --light-red-10: hsl(0, 100%, 67%, 5%);
+  --orangey-yellow-10: hsl(39, 100%, 56%, 5%);
+  --green-teal-10: hsl(166, 100%, 37%, 5%);
+  --cobalt--blue-10: hsl(234, 85%, 45%, 5%);
 
   /*Gradients*/
   --back-light-slate-blue: hsl(252, 100%, 67%);
@@ -237,7 +237,7 @@ p {
   }
 
   .card {
-    flex: 0 0 37rem;
+    flex: 0 0 39rem;
     display: flex;
     box-shadow: 1rem 2rem 3rem var(--pale-blue), -0.1rem 1rem 10px var(--pale-blue);
     border-radius: 2rem;
